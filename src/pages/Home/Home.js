@@ -28,7 +28,7 @@ export default () => {
                             uppercase={false}
                         >
                             Assistir
-                </Button>
+                        </Button>
 
                         <ButtonVertical nameIcon='information-outline' textIcon='Saiba mais' />
                     </View>
@@ -39,8 +39,8 @@ export default () => {
 
                     </View>
                 </>
-                {[1,2,3,4].map((secao, index)=>(
-                    <Secao hasTopBorder={index === 0 ? true : null } />
+                {[1, 2, 3, 4].map((secao, index) => (
+                    <Secao hasTopBorder={index === 0 ? true : null} />
                 ))}
             </ScrollView>
 

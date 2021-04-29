@@ -3,6 +3,7 @@ import React from 'react'
 import {Provider as PaperProvider, DefaultTheme } from 'react-native-paper'
 import Login from './src/pages/Login/Login';
 import Home from './src/pages/Home/Home';
+import Filme from './src/pages/Filme/Filme';
 import { LogBox, StyleSheet, View } from 'react-native';
 
 export default () => {
@@ -28,7 +29,7 @@ export default () => {
             {/* <Login /> */}
             <View style={styles.container}>
 
-              <Home />
+              <Filme />
             </View>
         </PaperProvider>
     )
