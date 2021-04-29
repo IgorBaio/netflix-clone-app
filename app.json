@@ -1,0 +1,12 @@
+{
+  "name": "netflix-clone-app",
+  "displayName": "netflix-clone-app",
+  "expo": {
+    "name": "netflix-clone-app",
+    "slug": "netflix-clone-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
