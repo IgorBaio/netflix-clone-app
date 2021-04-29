@@ -4,7 +4,7 @@ import { StyleSheet, View, Image, TouchableOpacity, ScrollView } from 'react-nat
 import { LinearGradient } from 'expo-linear-gradient'
 export default () => (
 
-    <ScrollView horizontal>
+    <ScrollView horizontal style={styles.flatListContainer}>
 
         {[1, 2, 3, 4, 5, 6].map(({ item, index }) => (
             <TouchableOpacity key={index} style={{ marginLeft: index === 0 ? 20 : 0, marginRight: 10 }}>
@@ -20,6 +20,9 @@ export default () => (
 )
 
 const styles = StyleSheet.create({
+    flatListContainer:{
+        marginBottom:30
+    },
     oval: {
         backgroundColor: '#E50014',
         padding: 2.5,

@@ -9,6 +9,7 @@ export default () => {
 
   LogBox.ignoreLogs([
     'Each child',
+    'VirtualizedList'
   ])
 
   const theme = {

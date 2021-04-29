@@ -6,6 +6,7 @@ import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import ButtonVertical from '../../components/ButtonVertical/Button'
 import Previas from '../../components/Previas/Previas';
+import Secao from '../../components/Secao/Secao';
 
 export default () => {
 
@@ -14,7 +15,6 @@ export default () => {
     return (
         <View style={styles.container}>
             <ScrollView>
-
                 <>
                     <Header />
                     <Hero />
@@ -39,6 +39,9 @@ export default () => {
 
                     </View>
                 </>
+                {[1,2,3,4].map((secao, index)=>(
+                    <Secao hasTopBorder={index === 0 ? true : null } />
+                ))}
             </ScrollView>
 
 
