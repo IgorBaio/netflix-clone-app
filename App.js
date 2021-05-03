@@ -5,6 +5,7 @@ import Login from './src/pages/Login/Login';
 import Home from './src/pages/Home/Home';
 import Filme from './src/pages/Filme/Filme';
 import { LogBox, StyleSheet, View } from 'react-native';
+import Routes from './routes';
 
 export default () => {
 
@@ -26,11 +27,7 @@ export default () => {
   return (
         <PaperProvider theme={theme}>
           <StatusBar style="auto" />
-            {/* <Login /> */}
-            <View style={styles.container}>
-
-              <Filme />
-            </View>
+              <Routes />
         </PaperProvider>
     )
 }

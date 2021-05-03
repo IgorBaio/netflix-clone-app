@@ -14,6 +14,7 @@ export default () => {
 
     return (
         <View style={styles.container}>
+            <StatusBar  backgroundColor='#000' />
             <ScrollView>
                 <>
                     <Header />
@@ -51,6 +52,7 @@ export default () => {
 
 const styles = StyleSheet.create({
     container: {
+        top:50,
         backgroundColor: '#000',
         padding: 15,
         alignItems: 'center',

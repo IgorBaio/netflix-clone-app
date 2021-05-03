@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { TextInput, Button } from 'react-native-paper';
 
-export default () => {
+export default ({navigation}) => {
 
     const [credenciais, setCredenciais] = useState({ email: '', senha: '' })
 
@@ -28,7 +28,7 @@ export default () => {
                 <Button
                     mode='contained'
                     style={[styles.marginBottom, styles.button]}
-                    onPress={() => console.log('pressed')}
+                    onPress={() => navigation.navigate('HomeTabs')}
                 >
                     Entrar
                     </Button>
